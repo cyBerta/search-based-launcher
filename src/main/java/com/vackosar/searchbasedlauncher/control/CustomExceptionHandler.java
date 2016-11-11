@@ -1,18 +1,10 @@
 package com.vackosar.searchbasedlauncher.control;
 
-import android.content.Context;
-import android.os.SystemClock;
-
-import org.apache.commons.lang.SystemUtils;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 /**
  * Created by cyBerta on 11.11.16.

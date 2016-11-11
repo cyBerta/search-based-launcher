@@ -1,20 +1,14 @@
 package com.vackosar.searchbasedlauncher.control;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.util.Log;
-
-import com.google.inject.Inject;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-import roboguice.inject.ContextSingleton;
 
 public class CrashReporter {
 
@@ -45,7 +39,7 @@ public class CrashReporter {
             Intent sendIntent = new Intent(Intent.ACTION_SEND);
             String subject = "Error report";
             String body =  trace+
-                            "\n\n";
+                    "\n\n";
 
             sendIntent.putExtra(Intent.EXTRA_EMAIL,
                     new String[]{});
